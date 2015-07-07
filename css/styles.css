@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.row{
+    width:100%;
+    overflow:auto;
+}
+.item {
+    float:left;
+    width:33%;
+    margin:auto;
+    overflow:auto;
+    padding: 0;
+}
+.image img{
+    width:100%;
+    padding:1em 1em;
+    border:2px solid lightgray;
+}
+ul {
+    list-style-type: none;
+}
+.menu {
+display: inline;
+position: relative;
+  right: -16px;
+}
+.menu>li {
+  margin: auto;
+  display: inline-block;
+  overflow: auto;
+  background: white;
+  border: 1px solid black;
+  bottom: 100%;
+  width: 20%;
+
+}
+.image-bar {
+  width: 100%;
+  position: relative;
+  top: -55px;
+  right: -4px;
+  /* padding: 0em; */
+}
+li{
+    text-align: center;
+}
+.drop-up li{
+    display:none;
+
+}
+.drop-up li:last-of-type {
+    display:block;
+}
+.drop-up:hover li{
+    display:block;
+}
