@@ -10,51 +10,72 @@ html {
 }
 .item {
     float:left;
-    width:33%;
-    margin:auto;
+    width:33.3%;
+    margin: 0;
     overflow:auto;
-    padding: 0;
+    border:2px solid lightgray;
+    padding:1em;
 }
 .image img{
     width:100%;
-    padding:1em 1em;
-    border:2px solid lightgray;
+    transition: all 1s ease;
 }
-ul {
-    list-style-type: none;
-}
-.menu {
-display: inline;
-position: relative;
-  right: -16px;
-}
-.menu>li {
-  margin: auto;
-  display: inline-block;
-  overflow: auto;
-  background: white;
-  border: 1px solid black;
-  bottom: 100%;
-  width: 20%;
-
+.image>img:active {
+  transform: rotateY(180deg);
 }
 .image-bar {
   width: 100%;
+  display: flex;
   position: relative;
-  top: -55px;
-  right: -4px;
-  /* padding: 0em; */
 }
-li{
-    text-align: center;
+ul {
+    list-style-type: none;
+    width: 100%;
 }
-.drop-up li{
-    display:none;
+li {
+  text-align: center;
+}
+.menu {
+  display: inline;
+  display: flex;
+  flex-direction: row;
+  background: none;
+  position: absolute;
+  bottom: -1rem;
+}
+.menu-title {
+  display: flex;
+  flex-direction: column-reverse;
+  /*justify-content: flex-end;*/
+  flex-grow: 1;
+}
 
+.drop-up{
+  display: none;
 }
-.drop-up li:last-of-type {
-    display:block;
+.drop-up>li {
+  border:2px solid lightgray;
 }
-.drop-up:hover li{
-    display:block;
+.menu-title-1:hover .drop-up-1 {
+  display: block;
+  background: white;
+  border:2px solid lightgray;
+}
+.menu-title-2:hover .drop-up-2 {
+  display: block;
+  background: white;
+  border:2px solid lightgray;
+}
+.menu-title-3:hover .drop-up-3 {
+  display: block;
+  background: white;
+  border:2px solid lightgray;
+}
+.menu-title-4:hover .drop-up-4 {
+  display: block;
+  background: white;
+  border:2px solid lightgray;
+}
+.price-line {
+  margin-top: 1rem;
 }
